@@ -13,26 +13,74 @@
 <body data-page="contact">
   <div class="site-container">
     <header class="header-container is-hero" id="heroHeader">
-      <div class="left-block"><p class="eyebrow">Portfolio / Data & statistiques</p><h1 class="greeting">Contact</h1><nav class="nav-bar" aria-label="Navigation principale"><a href="index.html" class="nav-link">Accueil</a><a href="apropos.html" class="nav-link">À propos</a><a href="experiences.html" class="nav-link">Expériences</a><a href="projets.html" class="nav-link">Projets</a><a href="contact.html" class="nav-link active">Contact</a></nav></div>
-      <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Changer de thème"><span aria-hidden="true">◐</span><span class="theme-label">Bleu</span></button><button class="language-toggle" type="button" aria-label="Changer de langue">FR <span aria-hidden="true">|</span> EN</button></div><div class="profile-container"><div class="profile-avatar"><img src="Mon_Profil.jpeg" alt="Portrait de l'étudiant en Science des Données"></div></div>
+      <div class="left-block">
+        <p class="eyebrow">Portfolio / Data & statistiques</p>
+        <h1 class="greeting">Contact</h1>
+        <nav class="nav-bar" aria-label="Navigation principale">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="apropos.html" class="nav-link">À propos</a>
+          <a href="experiences.html" class="nav-link">Expériences</a>
+          <a href="projets.html" class="nav-link">Projets</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Changer de thème">
+          <span aria-hidden="true">◐</span>
+          <span class="theme-label">Bleu</span>
+        </button>
+        <button class="language-toggle" type="button" aria-label="Changer de langue">
+          FR <span aria-hidden="true">|</span> EN
+        </button>
+      </div>
+      <div class="profile-container">
+        <div class="profile-avatar">
+          <img src="Mon_Profil.jpeg" alt="Portrait de l'étudiant en Science des Données">
+        </div>
+      </div>
     </header>
     <main class="main-content">
       <section class="content-section contact-layout reveal">
-        <div class="contact-intro"><p class="eyebrow">Échange</p><h2>Contactez-moi</h2><p>Un échange autour de la donnée, d'une collaboration ou d'une opportunité ? Écrivez-moi directement via ce formulaire.</p></div>
+        <div class="contact-intro">
+          <p class="eyebrow">Échange</p>
+          <h2>Contactez-moi</h2>
+          <p>Un échange autour de la donnée, d'une collaboration ou d'une opportunité ? Écrivez-moi directement via ce formulaire.</p>
+        </div>
         <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
           <input type="hidden" name="subject" value="Nouveau message depuis le portfolio">
           <input type="hidden" name="from_name" value="Portfolio Data">
-          <div class="form-row"><div class="form-field"><label for="last-name">Nom</label><input id="last-name" name="Nom" type="text" autocomplete="family-name" required></div><div class="form-field"><label for="first-name">Prénom</label><input id="first-name" name="Prénom" type="text" autocomplete="given-name" required></div></div>
-          <div class="form-field"><label for="email">Adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          <div class="form-field"><label for="subject">Sujet</label><input id="subject" name="Sujet" type="text" required></div>
-          <div class="form-field"><label for="message">Message</label><textarea id="message" name="Message" required></textarea></div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="last-name">Nom</label>
+              <input id="last-name" name="Nom" type="text" autocomplete="family-name" required>
+            </div>
+            <div class="form-field">
+              <label for="first-name">Prénom</label>
+              <input id="first-name" name="Prénom" type="text" autocomplete="given-name" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Adresse e-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="subject">Sujet</label>
+            <input id="subject" name="Sujet" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" required></textarea>
+          </div>
           <button class="btn btn-primary" type="submit">Envoyer le message <span aria-hidden="true">&#8599;</span></button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
-    <footer class="site-footer"><p>© 2026 · Portfolio Science des Données</p><a href="mailto:contact@exemple.fr">contact@exemple.fr</a></footer>
+    <footer class="site-footer">
+      <p>© 2026 · Portfolio Science des Données</p>
+      <a href="mailto:contact@exemple.fr">contact@exemple.fr</a>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
